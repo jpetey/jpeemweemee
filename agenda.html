@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>PeemWeeMee | Home</title>
+
+  <!--Link to Favicon CURRENTLY MIA-->
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+  <!-- CSS  -->
+  <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
+  <link href="assets/css/style.css" type="text/css" rel="stylesheet"/>
+
+  <!--Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Neucha|Permanent+Marker" rel="stylesheet">
+  <!-- Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body contenteditable="false">
+  <!--Page Header TABLET & COMPUTER ONLY-->
+  <header> 
+    <!--Banner imagery-->
+    <div class="navbar-fixed">
+      <nav class="red darken-4">
+
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo">
+              <img src="assets/img/logo-chips.png">
+            </a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="notifications.html"><i class="material-icons">notifications</i></a></li>
+              <li><a href="users.html"><i class="material-icons">account_circle</i></a></li>
+              <li><a href="settings.html"><i class="material-icons">settings</i></a></li>
+            </ul>
+          </div>
+        
+      </nav>
+    </div>
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="notifications.html">Notification Center</a></li>
+      <li><a href="users.html">Profile</a></li>
+      <li><a href="collapsible.html">Settings</a></li>
+    </ul>
+  </header>
+
+  <!--Page Title-->
+  <div class="row">
+    <div class="col s12 black amber-text text-lighten-2 "><h4>AGENDA</h4></div>
+  </div> 
+  <!--Active / Archive Tab-->
+  <div class="row">
+    <div class="col s12">
+      <ul class="tabs">
+        <li class="tab col s3"><a class="active" href="#Incomplete">Incomplete</a></li>
+        <li class="tab col s3"><a href="#Archived">Archived</a></li>
+      </ul>
+    </div>
+    <div id="Incomplete" class="col s12">
+      <!--Table: Incomplete / Active-->
+      <br>
+      <div class="container">
+        <table class="highlight">
+          <thead>
+            <tr>
+                <th>Completed?</th>
+                <th>Category</th>
+                <th>Agenda Item</th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><i class="material-icons">check_box_outline_blank</i></td>
+              <td>appTask</td>
+              <td>Learn how to "Group Git"</td>
+              <!-- Modal Trigger -->
+              <td><a class="waves-effect waves-light btn modal-trigger" href="#details1"><i class="material-icons">more_horiz</i></a>
+                <!-- Modal Structure -->
+                  <div id="details1" class="modal">
+                    <div class="modal-content">
+                      <h4>Agenda Item: Details</h4>
+                      <div class="chip">
+                        Incomplete
+                      </div>
+                      <div class="row">
+                        <form class="input-field col s12">
+                          <input id="item_title" type="text" class="validate">
+                          <label for="item_title">Agenda Item Title</label>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+                    </div>
+                  </div>
+              <td><a class="waves-effect waves-light btn-small"><i class="material-icons">mode_edit</i></a></td>
+              <td><a class="waves-effect waves-light btn-small"><i class="material-icons">delete_forever</i></a></td>
+            </tr>
+            <tr>
+              <td><i class="material-icons">check_box_outline_blank</i></td>
+              <td>Fantasy</td>
+              <td>Fantasy League Terms</td>
+              <td><a class="waves-effect waves-light btn-small"><i class="material-icons">more_horiz</i></a></td>
+              <td><a class="waves-effect waves-light btn-small"><i class="material-icons">mode_edit</i></a></td>
+              <td><a class="waves-effect waves-light btn-small"><i class="material-icons">delete_forever</i></a></td>
+            </tr>
+            <tr>
+              <td><i class="material-icons">check_box_outline_blank</i></td>
+              <td>T.O.A.B.</td>
+              <td>Playlisting</td>
+              <td><a class="waves-effect waves-light btn-small"><i class="material-icons">more_horiz</i></a></td>
+              <td><a class="waves-effect waves-light btn-small"><i class="material-icons">mode_edit</i></a></td>
+              <td><a class="waves-effect waves-light btn-small"><i class="material-icons">delete_forever</i></a></td>
+            </tr>
+            <tr>
+              <td><i class="material-icons">check_box_outline_blank</i></td>
+              <td>H2H</td>
+              <td>Non-Fitbit fitness challenge</td>
+              <td><a class="waves-effect waves-light btn-small"><i class="material-icons">more_horiz</i></a></td>
+              <td><a class="waves-effect waves-light btn-small"><i class="material-icons">mode_edit</i></a></td>
+              <td><a class="waves-effect waves-light btn-small"><i class="material-icons">delete_forever</i></a></td>
+            </tr>
+            <tr>
+              <td><i class="material-icons">check_box_outline_blank</i></td>
+              <td>H2H</td>
+              <td>Axe Throwing Battle</td>
+              <td><a class="waves-effect waves-light btn-small"><i class="material-icons">more_horiz</i></a></td>
+              <td><a class="waves-effect waves-light btn-small"><i class="material-icons">mode_edit</i></a></td>
+              <td><a class="waves-effect waves-light btn-small"><i class="material-icons">delete_forever</i></a></td>
+            </tr>
+            <tr>
+              <td><i class="material-icons">check_box_outline_blank</i></td>
+              <td>H2H</td>
+              <td>Mortal Kombat Battle</td>
+              <td><a class="waves-effect waves-light btn-small"><i class="material-icons">more_horiz</i></a></td>
+              <td><a class="waves-effect waves-light btn-small"><i class="material-icons">mode_edit</i></a></td>
+              <td><a class="waves-effect waves-light btn-small"><i class="material-icons">delete_forever</i></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div id="Archived" class="col s12">
+      <!--Table: Incomplete / Active-->
+      <br>
+      <div class="container">
+        <table class="highlight">
+          <thead>
+            <tr>
+                <th>Completed?</th>
+                <th>Category</th>
+                <th>Agenda Item</th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><i class="material-icons">check_box</i></td>
+              <td>Sports</td>
+              <td>Beat Slaps at Ping Pong</td>
+              <td><a class="waves-effect waves-light btn-small"><i class="material-icons">more_horiz</i></a></td>
+              <td><a class="waves-effect waves-light btn-small"><i class="material-icons">mode_edit</i></a></td>
+              <td><a class="waves-effect waves-light btn-small"><i class="material-icons">delete_forever</i></a></td>
+            </tr>
+            <tr>
+              <td><i class="material-icons">check_box</i></td>
+              <td>Wizzurk</td>
+              <td>Pillow Talk - August 2019</td>
+              <td><a class="waves-effect waves-light btn-small"><i class="material-icons">more_horiz</i></a></td>
+              <td><a class="waves-effect waves-light btn-small"><i class="material-icons">mode_edit</i></a></td>
+              <td><a class="waves-effect waves-light btn-small"><i class="material-icons">delete_forever</i></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- Scripts-->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+  <script src="assets/js/script.js"></script>
+
+  </body>
+</html>
+
+<!--NOTES
+  Char limit to Topics
+  add Description 
+  add Category
+  -->
