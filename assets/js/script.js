@@ -4,4 +4,6 @@
     $('.tabs').tabs();
 
     $('.modal').modal();
+  
   });
+
